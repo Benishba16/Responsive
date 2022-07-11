@@ -8,12 +8,12 @@ function ImportTableHead(props) {
   return (
     <div className='import-table-head'>
         <div className='import-table-head1'>
-            <div className='import-table-head--filter'>{Filter(20, 20)}</div>
+            <div className='import-table-head--filter c-pointer'>{Filter(20, 20)}</div>
             <div className='import-table-head--content'>
                 <div className='import-table-head--content---file'>My CRM.xlsx</div>
                 <div className='import-table-head--content---page'>
                     <div>Page 1</div>
-                    <div className='d-flex align-items-center'>{DropDown(16, 16)}</div>
+                    <div className='d-flex align-items-center c-pointer'>{DropDown(16, 16)}</div>
                 </div>
             </div>
             </div>

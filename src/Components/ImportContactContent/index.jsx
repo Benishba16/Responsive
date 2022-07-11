@@ -11,8 +11,8 @@ function ImportContentContect(props) {
       <ImportContactProgress/>
       <ImportContactData/>
       <div className='import-footer'>
-        <div className='import-footer--back'>Back</div>
-        <div className='import-footer--next'>Save & Next</div>
+        <div className='import-footer--back c-pointer'>Back</div>
+        <div className='import-footer--next c-pointer'>Save & Next</div>
       </div>
     </div>
   )

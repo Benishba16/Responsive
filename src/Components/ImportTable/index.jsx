@@ -1,6 +1,7 @@
 import React from 'react'
 import ImportTableHead from '../ImportTableHead'
-import Table from '../Table'
+// import Table from '../Table'
+import Table1 from '../Table1'
 import "./style.scss"
 
 const column = [
@@ -232,7 +233,7 @@ function ImportTable() {
         <ImportTableHead column={column} data={data}/>
       </div>
       <div>
-        <Table column={column} data={data}/>
+        <Table1 column={column} data={data}/>
       </div>
     </div>
   )

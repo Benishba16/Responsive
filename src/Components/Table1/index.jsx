@@ -1,32 +1,34 @@
 import React from 'react';
 import './style.scss';
 
-export default function Table(props) {
-  const { data, column, parent } = props;
-  console.log("data",data);
-  console.log("column",column)
+export default function Table1(props) {
+  const { data, column, parent, actionValues } = props;
 
+  const handleClick = (e, data) => {
+    e.stopPropagation();
+    props.handleAction(e.target.checked, data);
+  }
   return (
-    <table className="table table-hover">
+    <table className="table1 table-hover">
       <thead>
         <tr>
           {/* <th scope="col"><input type="checkbox" /></th> */}
           {column.map(columnData => 
             <>
-              {columnData.visible && <th style={{borderBottom:"none"}} scope="col" key={columnData.columnTitle}>{columnData.columnTitle}</th>}
+              {!columnData.hidden && <th style={{borderBottom:"none"}} scope="col" key={columnData.displayName}>{columnData.displayName}</th>}
             </>
           )}
         </tr>
       </thead>
       <tbody>
-        {data.map((dataData, index) => 
-          <tr key={(dataData)} className="c-pointer" onClick={() => parent !== 'product' && props.history.push(`${parent}/${dataData.id}`)}>
-            {/* <th scope="row"><input type="checkbox" onClick={(e) => {e.stopPropagation()}} /></th> */}
+        {!!data && data.map((dataData, index) => 
+          <tr key={(dataData)} className="c-pointer" onClick={() => parent !== 'deals' && props.history.push(`${parent}/${dataData.id}`)}>
+            {/* <th scope="row"><input type="checkbox" checked={actionValues.includes(dataData.id)} onClick={(e) => handleClick(e, dataData)} /></th> */}
             {column.map(columnData => 
               <>
-                {columnData.visible && <td style={{borderTop:"none"}} key={columnData.columnTitle}> 
-                  {!(columnData.field === 'email' || columnData.field === 'createdBy') && <span>{dataData[columnData.field]}</span>}
-                  {(columnData.field === 'email' || columnData.field === 'createdBy') && <a className="anchor-tag" href={`mailto:${dataData[columnData.field]}`}>{dataData[columnData.field]}</a>}
+                {!columnData.hidden && <td style={{borderTop:"none"}} key={columnData.displayName}> 
+                  {!(columnData.name === 'email' || columnData.name === 'createdBy') && <span>{dataData[columnData.name]}</span>}
+                  {(columnData.name === 'email' || columnData.name === 'createdBy') && <a className="anchor-tag" href={`mailto:${dataData[columnData.name]}`}>{dataData[columnData.name]}</a>}
                 </td>}
               </>
             )}

@@ -12,10 +12,10 @@ export default function Table(props) {
     <table className="table table-hover">
       <thead>
         <tr>
-          {/* <th scope="col"><input type="checkbox" /></th> */}
+          <th scope="col"><input type="checkbox" /></th>
           {column.map(columnData => 
             <>
-              {!columnData.hidden && <th style={{borderBottom:"none"}} scope="col" key={columnData.displayName}>{columnData.displayName}</th>}
+              {!columnData.hidden && <th scope="col" key={columnData.displayName}>{columnData.displayName}</th>}
             </>
           )}
         </tr>
@@ -23,7 +23,7 @@ export default function Table(props) {
       <tbody>
         {!!data && data.map((dataData, index) => 
           <tr key={(dataData)} className="c-pointer" onClick={() => parent !== 'deals' && props.history.push(`${parent}/${dataData.id}`)}>
-            {/* <th scope="row"><input type="checkbox" checked={actionValues.includes(dataData.id)} onClick={(e) => handleClick(e, dataData)} /></th> */}
+            <th scope="row"><input type="checkbox" checked={actionValues.includes(dataData.id)} onClick={(e) => handleClick(e, dataData)} /></th>
             {column.map(columnData => 
               <>
                 {!columnData.hidden && <td style={{borderTop:"none"}} key={columnData.displayName}> 
