@@ -1,0 +1,31 @@
+.import-progress{
+    height: 51px;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+    &--content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 15px;
+    }
+}
+
+.import-data{
+    gap: 20px;
+    &--content{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    &--content1{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &--content:last-child .import-data--content2--next{
+        display: none;
+    }
+    &--content2--next{
+        display: flex;
+    }
+}

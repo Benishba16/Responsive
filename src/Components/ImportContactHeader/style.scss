@@ -1,0 +1,21 @@
+.import-header{
+    // border: 2px solid red;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 23px;
+    &--tab{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &--close{
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

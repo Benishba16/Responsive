@@ -1,0 +1,22 @@
+@import "../../assets/styling/variable";
+
+.table {
+  width: 150vw;
+  thead {
+    color: #7c7c7c;
+    font-size: 13px;
+  }
+  tbody {
+    font-size: 14px;
+  }
+  .anchor-tag {
+    color: $theme-text;
+  }
+  th {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  td {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+}

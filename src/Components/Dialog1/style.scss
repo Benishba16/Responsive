@@ -1,0 +1,34 @@
+.dialog1-container{
+    // border: 2px solid red;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    // bottom: 0;
+    left: 0;
+    // right: 0;
+}
+
+.dialog1-excrete{
+    position: absolute;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    // bottom: 0;
+    // border: 2px solid green;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+}
+
+.dialog1{
+    // border: 2px solid yellow;
+    position: absolute;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 60px);
+    top: 30px;
+    left: 40px;
+    overflow: auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+}

@@ -1,0 +1,42 @@
+@import "../../assets/styling/variable";
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .side-nav--logo {
+    // border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 15px 0px;
+    margin: 4px 0px 4px 4px;
+    width: 52px;
+    height: 52px;
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  .side-nav--link {
+    display: flex;
+    flex-direction: column;
+
+    .navbar-item {
+      // border: 2px solid yellow;
+      // margin: 4px auto;
+      margin: 4px 4px 4px 4px;
+      text-decoration: none;
+      width: 52px;
+      height: 52px;
+      &.is-active {
+        background: $theme-color;
+        border-radius: 8px;
+      }
+      .side-nav--icon {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.import-table-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    &--filter{
+        width: 52px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &--content{
+        display: flex;
+        align-items: center;
+        &---file{
+            padding-right: 16px;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        &---page{
+            padding-left: 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    }
+
+    &--value{
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        &---rows{
+            padding: 0px 12px 0px 0px;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        &---cols{
+            padding: 0px 16px 0px 12px;
+        }
+    }
+}
+
+.import-table-head1{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}

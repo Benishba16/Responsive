@@ -1,0 +1,18 @@
+.import-table{
+    overflow: auto;
+    // position: absolute;
+    // width: 875px;
+    width: calc(100vw - 461px);
+    height: calc(100vh - 197px);
+    display: flex;
+    flex-direction: column;
+    // flex: 14.3;
+    overflow: auto;
+    margin: 8px 0px 0px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;    
+    &--head{
+        // border: 2px solid yellow;
+        height: 50px;
+    }
+}
