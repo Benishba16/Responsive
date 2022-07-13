@@ -1,9 +1,7 @@
 .import-field{
     overflow: auto;
-    // width: calc(100vw - 875px);
-    width: 461px;
-    // height: calc(100vh - 197px);
-    height: 635px;
+    width: calc(100vw - 875px);
+    height: calc(100vh - 197px);
     margin: 8px 8px 0px 8px;
     display: flex;
     flex-direction: column;
