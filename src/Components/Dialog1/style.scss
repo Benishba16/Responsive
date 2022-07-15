@@ -1,5 +1,5 @@
 .dialog1-container {
-  padding-top: 30px;
+  // padding-top: 30px;
   position: absolute;
   top: 0;
   // right: 0;
@@ -14,7 +14,7 @@
   }
   .dialog1 {
     overflow: auto;
-    margin: auto;
+    margin: 30px 40px;
     top: 0;
     right: 0;
     border-radius: 8px;
@@ -24,5 +24,7 @@
     // height: calc(100vh - 60px);
     width: calc(100vw - 6.2em);
     height: calc(100vh - 4.6em);
+    width: 94%;
+    height: 93%;
   }
 }
